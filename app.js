@@ -56,6 +56,7 @@ const cardDetails = details => {
     fetch('https://deckofcardsapi.com/api/deck/new/draw/?count=52')
     .then(res => res.json())
     .then(data => {
+      console.log(data);
        detailsDiv.innerHTML = ''
 
         const allCard = data.cards
